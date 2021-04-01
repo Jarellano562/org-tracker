@@ -61,7 +61,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 `DB_PW=____________`
 
-
+- TERMINAL $alias mysql=/usr/local/mysql/bin/mysql--
 - TERMINAL $mysql -u root -p
 - TERMINAL $show databases;
 - TERMINAL $create database all_employees;
