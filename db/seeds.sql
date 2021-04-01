@@ -1,3 +1,5 @@
+USE all_employees;
+
 INSERT INTO departments(id, department_name)
 VALUES
 (001, "Management"),
@@ -30,7 +32,7 @@ VALUES
 
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
 VALUES
-(1000, "Nick", "AA", 3000, null),
+(1000, "Nick", "AA", 30, null),
 (1001, "Pick", "BB", 10, null),
 (1002, "Lick", "CC", 11, null),
 (1003, "Tick", "DD", 12, null),
@@ -55,3 +57,9 @@ VALUES
 (6002, "Joon", "WW", 61, 6001),
 (6003, "Brick", "XX", 61, 6001),
 (6004, "Trick", "YY", 61, 6001);
+
+SELECT * FROM departments;
+SELECT * FROM roles;
+SELECT * FROM employee;
+
+-- alias mysql=/usr/local/mysql/bin/mysql--

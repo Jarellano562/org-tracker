@@ -1,11 +1,16 @@
+DROP DATABASE IF EXISTS all_employees;
+
 DROP TABLE IF EXISTS departments;
 DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS employee;
 
+
+CREATE DATABASE all_employees;
+USE all_employees;
+
 CREATE TABLE departments (
   id INT NOT NULL,
-  department_name VARCHAR(30) NOT NULL,
-  PRIMARY KEY (id)
+  department_name VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE roles (
@@ -23,4 +28,5 @@ CREATE TABLE employee (
   role_id INT UNSIGNED NOT NULL REFERENCES roles(id),
   manager_id INT UNSIGNED REFERENCES manager(id),
   PRIMARY KEY (id)
+
 );

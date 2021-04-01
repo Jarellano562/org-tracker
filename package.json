@@ -1,0 +1,31 @@
+{
+  "name": "org-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodeman server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jarellano562/org-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jarellano562/org-tracker/issues"
+  },
+  "homepage": "https://github.com/Jarellano562/org-tracker#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "console.table": "^0.10.0",
+    "dotenv": "^8.2.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "mysql2": "^2.2.5",
+    "nodeman": "^1.1.2",
+    "promise-mysql": "^5.0.3"
+  }
+}
